@@ -12,7 +12,8 @@ object PmdlBuild extends Build {
       version := "0.1-SNAPSHOT",
       scalaVersion := "2.10.4",
       // add other settings here
-      libraryDependencies += "org.scalaj" %% "scalaj-http" % "0.3.16"
+      libraryDependencies ++= Seq("org.scalaj" %% "scalaj-http" % "0.3.16",
+                                  "com.github.scopt" %% "scopt" % "3.2.0")
     )
   )
 }
